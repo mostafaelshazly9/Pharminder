@@ -124,10 +124,14 @@ $(document).ready(function(){
 		$("table tbody tr").eq(index + 1).find(".add, .edit").toggle();
         $('[data-toggle="tooltip"]').tooltip();
     });
+    var inputs= [];
 	// Add row on add button click
 	$(document).on("click", ".add", function(){
 		var empty = false;
 		var input = $(this).parents("tr").find('input[type="text"]');
+        input.each(function(){
+             inputs.push($(this).val());
+        });
         input.each(function(){
 			if(!$(this).val()){
 				$(this).addClass("error");
@@ -143,7 +147,16 @@ $(document).ready(function(){
 			});			
 			$(this).parents("tr").find(".add, .edit").toggle();
 			$(".add-new").removeAttr("disabled");
-		}		
+		}
+        $.post("add_pharm.php",
+{
+    Name:inputs[1],
+    Address:inputs[2],
+    LocationLongtuide:inputs[3],
+    Locationattitude:inputs[4],
+    PhoneNumber:inputs[5],
+    Notes:inputs[6]
+  });
     });
 	// Edit row on edit button click
 	$(document).on("click", ".edit", function(){		
