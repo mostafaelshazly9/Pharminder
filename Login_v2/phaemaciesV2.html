@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>pharmacy control panel</title>
+<style>
+    .controlBtn{
+        background-color: aqua;
+        font:white;
+        padding:5px;
+        margin: 5px;
+        width: 70px;
+    } 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+ 
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align:center;
+  padding:4px;
+  margin: auto;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<h2 style="text-align: center; color: aqua">Pharmacies Control Panel</h2>
+<br>
+    <hr>
+    <br>
+<table>
+  <tr>
+    <th>pharmacy ID</th>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Locatoin longitude</th>
+    <th>Location attitude</th>
+    <th>Phone Number</th>
+    <th>Notes</th>
+    <th>Action</th>
+  </tr>
+    <form action="page.php">
+  <tr>
+   <td><input type="number" name="pharID"></td>
+    <td><input type="text" name="pharname"></td>
+    <td><input type="text" name="pharAdderess"></td>
+    <td><input type="text" name="pharlong"></td>
+    <td><input type="text" name="pharatti"></td>
+    <td><input type="number" name="pharnum"></td>
+    <td><input type="text" name="notes"></td>
+    <td><button class="controlBtn">Edit</button> <button class="controlBtn">Delete</button></td>
+  </tr>
+        </form>
+  <form action="page.php">
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+        </form>
+  <form action="page.php">
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+        </form>
+</table>
+
+</body>
+</html>
