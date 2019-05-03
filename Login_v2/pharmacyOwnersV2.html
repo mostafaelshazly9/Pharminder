@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>pharmacy owners control panel</title>
+<style>
+    .controlBtn{
+        background-color: aqua;
+        font:white;
+        padding:5px;
+        margin: 5px;
+        width: 70px;
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align: center; color: aqua">Pharmacy owners Control Panel</h2>
+<br>
+    <hr>
+    <br>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>ID</th>
+    <th>Password</th>
+    <th>Email</th>
+    <th>Mobile number</th>
+    <th>Notes</th>
+    <th>Pharmacy</th> 
+    <th>Action</th>
+  </tr>
+    <form>
+  <tr>
+   <td><input type="text" name="ownName"></td>
+    <td><input type="number" name="ownID"></td>
+    <td><input type="password" name="ownPassword"></td>
+    <td><input type="email" name="ownEmail"></td>
+    <td><input type="text" name="ownPhone"></td>
+    <td><input type="text" name="notes"></td>
+    <td><input type="text" name="ownPharmacy"></td>
+    <td><button class="controlBtn">Edit</button> <button class="controlBtn">Delete</button></td>
+  </tr>
+        </form>
+  <form action="page.php">
+  <tr>
+   <td><input type="text" name="ownName"></td>
+    <td><input type="number" name="ownID"></td>
+    <td><input type="password" name="ownPassword"></td>
+    <td><input type="email" name="ownEmail"></td>
+    <td><input type="text" name="ownPhone"></td>
+    <td><input type="text" name="notes"></td>
+    <td><input type="text" name="ownPharmacy"></td>
+    <td><button class="controlBtn">Edit</button> <button class="controlBtn">Delete</button></td>
+  </tr>
+        </form>
+</table>
+
+</body>
+</html>
