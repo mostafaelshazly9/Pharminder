@@ -40,8 +40,8 @@ tr:nth-child(even) {
         }
         function edit()
         {
-            document.forms['pharm_form'].action='edit_pharm.php';
-            document.forms['pharm_form'].submit();
+            document.forms['pharm_form2'].action='edit_pharm.php';
+            document.forms['pharm_form2'].submit();
         }
 
     </script>
@@ -72,6 +72,7 @@ tr:nth-child(even) {
     <td><input type="number" name="ud_phone"></td>
     <td><input type="text" name="ud_note"></td>
      <td><button class="controlBtn" onclick="add();">Add</button>
+         
   </td>
   </tr>
       </form>
@@ -88,15 +89,15 @@ while ($row=$result -> fetch_assoc()){
 ?>
  
   
-    <form name="pharm_form" method="post">      
+    <form name="pharm_form2" method="post">      
   <tr>
    <td><input type="text" name="ud_id" value='<?php echo $row["id"];?>'></td>
-    <td><input type="text" name="ud_name" value="<?php echo $row["name"]; ?>"></td>
-    <td><input type="text" name="ud_address" value="<?php echo $row["address"]; ?>"></td>
-    <td><input type="text" name="ud_latitude" value="<?php echo $row["latitude"]; ?>"></td>
-    <td><input type="text" name="ud_longitude" value="<?php echo $row["longitude"]; ?>"></td>
-    <td><input type="text" name="ud_phone" value="<?php echo $row["phone_number"]; ?>"></td>
-    <td><input type="text" name="ud_note" value="<?php echo $row["notes"] ; ?>"></td>
+    <td><input type="text" name="ud_name" value="<?php echo $row['name']; ?>"></td>
+    <td><input type="text" name="ud_address" value="<?php echo $row['address']; ?>"></td>
+    <td><input type="text" name="ud_latitude" value="<?php echo $row['latitude']; ?>"></td>
+    <td><input type="text" name="ud_longitude" value="<?php echo $row['longitude']; ?>"></td>
+    <td><input type="text" name="ud_phone" value="<?php echo $row['phone_number']; ?>"></td>
+    <td><input type="text" name="ud_note" value="<?php echo $row['notes'] ; ?>"></td>
       
      <td><button class="controlBtn" onclick="add();">Add</button>
    <button class="controlBtn" onclick="edit();">Edit</button>
@@ -106,9 +107,13 @@ while ($row=$result -> fetch_assoc()){
        
     
         <?php
-     }}
+     }
+
     ?>
-    </table>   
+    </table> 
+    <?php
+    }
+    ?>
     
         
 
