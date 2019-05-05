@@ -62,6 +62,19 @@ tr:nth-child(even) {
     <th>Notes</th>
     <th>Action</th>
   </tr>
+    <form name="pharm_form" method="post">      
+  <tr>
+   <td><input type="number" name="ud_id">  </td>
+    <td><input type="text" name="ud_name"></td>
+    <td><input type="text" name="ud_address"></td>
+    <td><input type="text" name="ud_latitude"></td>
+    <td><input type="text" name="ud_longitude"></td>
+    <td><input type="number" name="ud_phone"></td>
+    <td><input type="text" name="ud_note"></td>
+     <td><button class="controlBtn" onclick="add();">Add</button>
+  </td>
+  </tr>
+      </form>
      <?php
           $conn=mysqli_connect("localhost","root","","pharminder");
 if ($conn -> connect_error){
@@ -73,20 +86,7 @@ if ($result -> num_rows>0){
 while ($row=$result -> fetch_assoc()){
     
 ?>
-          <form name="pharm_form" method="post">      
-  <tr>
-   <td><input type="number" name="ud_id">  </td>
-    <td><input type="text" name="ud_name"></td>
-    <td><input type="text" name="ud_address"></td>
-    <td><input type="text" name="ud_latitude"></td>
-    <td><input type="text" name="ud_longitude"></td>
-    <td><input type="number" name="ud_phone"></td>
-    <td><input type="text" name="ud_note"></td>
-     <td><button class="controlBtn" onclick="add();">Add</button>
-   <button class="controlBtn">Edit</button>
-        <button class="controlBtn">Delete</button></td>
-  </tr>
-      </form>
+ 
   
     <form name="pharm_form" method="post">      
   <tr>
@@ -102,13 +102,16 @@ while ($row=$result -> fetch_assoc()){
    <button class="controlBtn" onclick="edit();">Edit</button>
         <button class="controlBtn">Delete</button></td>
   </tr>
+        </form>
+       
+    
         <?php
      }}
     ?>
-      </form>
+    </table>   
     
         
-</table>
+
     
 <?php 
     mysqli_free_result($result);
