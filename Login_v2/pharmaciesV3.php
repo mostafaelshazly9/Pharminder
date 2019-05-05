@@ -30,19 +30,11 @@ tr:nth-child(even) {
 </style>
     <script>
         function add(){
+            
             document.forms['pharm_form'].action='add_pharm.php';
             document.forms['pharm_form'].submit();
         }
-        function del()
-        {
-            document.forms['pharm_form'].action='del_pharm.php';
-            document.forms['pharm_form'].submit();
-        }
-        function edit()
-        {
-            document.forms['pharm_form2'].action='edit_pharm.php';
-            document.forms['pharm_form2'].submit();
-        }
+      
 
     </script>
 </head>
@@ -98,10 +90,9 @@ while ($row=$result -> fetch_assoc()){
     <td><input type="text" name="ud_longitude" value="<?php echo $row['longitude']; ?>"></td>
     <td><input type="text" name="ud_phone" value="<?php echo $row['phone_number']; ?>"></td>
     <td><input type="text" name="ud_note" value="<?php echo $row['notes'] ; ?>"></td>
-      
-     <td><button class="controlBtn" onclick="add();">Add</button>
-   <button class="controlBtn" onclick="edit();">Edit</button>
-        <button class="controlBtn">Delete</button></td>
+      <td>
+   <button class="controlBtn" formaction="edit_pharm.php">Edit</button>
+        <button class="controlBtn" formaction="del_pharm.php">Delete</button></td>
   </tr>
         </form>
        
