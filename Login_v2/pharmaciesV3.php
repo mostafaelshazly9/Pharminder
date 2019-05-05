@@ -73,27 +73,7 @@ if ($result -> num_rows>0){
 while ($row=$result -> fetch_assoc()){
     
 ?>
-  
-    <form name="pharm_form" method="post">      
-  <tr>
-   <td><input type="hidden" name="ud_id"><?php echo $row["id"];?></td>
-    <td><input type="hidden" name="ud_name"><?php echo $row["name"]; ?></td>
-    <td><input type="hidden" name="ud_address"><?php echo $row["address"]; ?></td>
-    <td><input type="hidden" name="ud_latitude"><?php echo $row["latitude"]; ?></td>
-    <td><input type="hidden" name="ud_longitude"><?php echo $row["longitude"]; ?></td>
-    <td><input type="hidden" name="ud_phone"><?php echo $row["phone_number"]; ?></td>
-    <td><input type="hidden" name="ud_note"><?php echo $row["notes"] ; ?></td>
-      
-     <td><button class="controlBtn" onclick="add();">Add</button>
-   <button class="controlBtn" onclick="edit();">Edit</button>
-        <button class="controlBtn">Delete</button></td>
-  </tr>
-        <?php
-     }}
-    ?>
-      </form>
-    
-        <form name="pharm_form" method="post">      
+          <form name="pharm_form" method="post">      
   <tr>
    <td><input type="number" name="ud_id">  </td>
     <td><input type="text" name="ud_name"></td>
@@ -106,7 +86,28 @@ while ($row=$result -> fetch_assoc()){
    <button class="controlBtn">Edit</button>
         <button class="controlBtn">Delete</button></td>
   </tr>
-      </form>      
+      </form>
+  
+    <form name="pharm_form" method="post">      
+  <tr>
+   <td><input type="text" name="ud_id" value='<?php echo $row["id"];?>'></td>
+    <td><input type="text" name="ud_name" value="<?php echo $row["name"]; ?>"></td>
+    <td><input type="text" name="ud_address" value="<?php echo $row["address"]; ?>"></td>
+    <td><input type="text" name="ud_latitude" value="<?php echo $row["latitude"]; ?>"></td>
+    <td><input type="text" name="ud_longitude" value="<?php echo $row["longitude"]; ?>"></td>
+    <td><input type="text" name="ud_phone" value="<?php echo $row["phone_number"]; ?>"></td>
+    <td><input type="text" name="ud_note" value="<?php echo $row["notes"] ; ?>"></td>
+      
+     <td><button class="controlBtn" onclick="add();">Add</button>
+   <button class="controlBtn" onclick="edit();">Edit</button>
+        <button class="controlBtn">Delete</button></td>
+  </tr>
+        <?php
+     }}
+    ?>
+      </form>
+    
+        
 </table>
     
 <?php 
