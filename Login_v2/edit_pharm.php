@@ -13,5 +13,10 @@ $conn=mysqli_connect("localhost","root","","pharminder");
 
 $sql= "call updatePharmacy('$id','$Name','$Address','$LocLong','$LocAtt','$Phone','$Notes')"; 
     $result = mysqli_query($conn,$sql);
+
+ if ($result)
+    {
+         header('location: pharmaciesV3.php');
+    }
  
 ?>
