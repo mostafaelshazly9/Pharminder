@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <title>medicine control panal</title>
+    <link rel="stylesheet"  href="css/css/svg-with-js.min.css">
+<style>
+  body{
+ background: url("background.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  }
+    .controlBtn{
+        background-color:#008B8B ;
+        color:white;
+        padding:10px;
+        margin: 10px;
+    } 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 15px;
+    border-color: white;
+}
+
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+th{
+  background-color:#008080;
+  font-style: italic;
+  color:white;
+  
+}
+}
+</style>
+</head>
+<body>
+  <i class="fas fa-capsules"></i>
+<h2 style="text-align: left; color: black; font-size: xx-large;font-weight: bold" >Medicine Control Panel</h2>
+<br>
+    <hr>
+    <br>
+<table>
+  <div>
+  <tr>
+    <th>Medicine ID</th>
+    <th>Name</th>
+    <th>Arabic name</th>
+    <th>Action</th>
+  </tr>
+  </div>
+  <form action="/action_page.php">
+    <tr>
+    <td><input type="number" name="medID"></td>
+    <td><input type="text" name="medName"></td>
+    <td><input type="text" name="medArabName"></td>
+    <td><button class="controlBtn" >Delete</button></td>
+  </tr>
+      </form>
+    <form>
+  <tr>
+   <td><input type="number" name="medID"></td>
+    <td><input type="text" name="medName"></td>
+    <td><input type="text" name="medArabName"></td>
+    <td><button class="controlBtn" >Delete</button></td>
+  </tr>
+    </form>
+    <form>
+  <tr>
+  <td><input type="number" name="medID"></td>
+    <td><input type="text" name="medName"></td>
+    <td><input type="text" name="medArabName"></td>
+    <td><button class="controlBtn" >Delete</button></td>
+  </tr>
+        </form>
+  
+</table>
+
+</body>
+</html>
