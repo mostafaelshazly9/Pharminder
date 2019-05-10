@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Pharminder</string>
+    <string-array name="array_medicine">
+        <item>Aria</item>
+        <item>Albia</item>
+        <item>Auroo</item>
+        <item>Araina</item>
+        <item>Arraaaaa</item>
+    </string-array>
+    <color name="color1">#DAD8E6</color>
+</resources>
