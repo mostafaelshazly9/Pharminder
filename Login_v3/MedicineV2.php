@@ -3,19 +3,11 @@
 <head>
 <meta charset="iso-8859-6">
 <style>
-  body{
- background: url("4.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  
-  }
     .controlBtn{
- background-color:#3C636F ;
-        color:white;
-        padding:10px;
-        margin: 10px;
-        font-weight: bold;
+        background-color: aqua;
+        font:white;
+        padding:15px;
+        margin: 5px;
     } 
 table {
   font-family: arial, sans-serif;
@@ -27,13 +19,6 @@ td, th {
   border: 1px solid #dddddd;
   text-align: center;
   padding: 15px;
-  border-color: white;
-}
-th{
-      background-color:#3C636F;
-      font-style: italic;
-      color:white;
-      width: 30%;
 }
 
 tr:nth-child(even) {
@@ -43,7 +28,7 @@ tr:nth-child(even) {
 </head>
 <body>
 
-<h2 style="text-align: left; color:#3C636F; font-size: xx-large;font-weight: bold">Medicine Control Panel</h2>
+<h2 style="text-align: center;">Medicine Control Panel</h2>
 <br>
     <hr>
     <br>
