@@ -3,12 +3,19 @@
 <head>
     <title>pharmacy owners control panel</title>
 <style>
+  body{
+ background: url("4.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
     .controlBtn{
-        background-color: aqua;
-        font:white;
+        background-color: #3C636F;
+        color:white;
         padding:5px;
         margin: 5px;
         width: 70px;
+        font-weight: bold;
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -28,7 +35,7 @@ tr:nth-child(even) {
 </head>
 <body>
 
-<h2 style="text-align: center; color: aqua">Pharmacy owners Control Panel</h2>
+<h2 style="text-align: left; color:#3C636F ; font-size: xx-large;font-weight: bold">Pharmacy owners Control Panel</h2>
 <br>
     <hr>
     <br>

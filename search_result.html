@@ -5,6 +5,19 @@
 <meta name="searchResult">
 <title>search result</title>
     <style>
+      body {
+    margin:0;
+    padding: 0;
+   background: url("med.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ 
+  
+}
+
+
+
      div.container {
     width:98%; 
     margin:1%;
@@ -14,75 +27,59 @@
     margin-top: auto;
     margin-left:auto; 
     margin-right:auto; 
-    width:50%;
+    width:100%;
     padding-right: 20px;
+    border: 10px;
+    border-collapse: collapse;
+    color: white;
   }
         th{
             font-size:20px;
+            width: 600px;
+            height:5px;
+            padding:10px;
+            margin: 10px;
+            background-color: #3C636F;
+            color: white;
         }
   tr,td {text-align:left;}
+  tr{
+    width: 50px;
+    height: 40px;
+    padding: 10px;
+    color: white;
+  }
+  td{
+    padding: 20px;
+  }
+  .space{
+    width: 10px;
+    height: 90px;
+  }
     </style>
     <body>
-        <div style="text-align: center; margin-top: auto; margin-left:auto; margin-right:auto;font-size: 30px;font-weight: bold; color:blue;">
+        <div style="text-align: center; margin-top: auto; margin-left:auto; margin-right:auto;font-size: 30px;font-weight: bold; color:white">
+           <div class="space">
+          
+        </div>
             <p>SEARCH RESULT</p>
         </div>
         <hr>
     <div class="container">
-    <table id="table1">
+    <table id="table1" border="1">
      <tr>
     <th>Name</th>
     <th>Address</th>
     <th>Phone number</th>
     <th>Distance from your location</th>
   </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-        <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-        <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-        <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-        <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-        <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-        <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
+     <tr>
+      <td><input type="text" name="Name"</td>
+      <td><input type="text" name="Addess"</td>
+      <td><input type="text" name="phone"</td>
+      <td><input type="text" name="distance"</td>
+     </tr>
+
     </table>
   </div>
     </body>
