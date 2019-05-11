@@ -1,12 +1,20 @@
 body{
     margin:0;
     padding: 0;
-    background: #8798ee;
+   background: url("med.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+
+.content{
+  background-color:red;
+}
+
 .search-box{
-    position: absolute;
-    top: 75%;
-    left: 50%;
+    position:absolute;
+    top: 60%;
+    left: 38%;
     transform: translate(-50%,50%);
     background: #1a4a6b;
     height: 40px;
@@ -34,12 +42,18 @@ body{
     align-items: center;
     transition: 0.4s;
 }
+.text{
+  width: 80px;
+  height: 90px;
+}
+
 .picture{
-    image-orientation: 20px;
+    image-orientation:20px;
     text-align: center;
-    
+  
     
 }
+
 .autocomplete-items {
   position: absolute;
   border: 1px solid #d4d4d4;
