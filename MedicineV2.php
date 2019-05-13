@@ -3,11 +3,19 @@
 <head>
 <meta charset="iso-8859-6">
 <style>
+  body{
+ background: url("4.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  }
     .controlBtn{
-        background-color: aqua;
-        font:white;
-        padding:15px;
-        margin: 5px;
+ background-color:#3C636F ;
+        color:white;
+        padding:10px;
+        margin: 10px;
+        font-weight: bold;
     } 
 table {
   font-family: arial, sans-serif;
@@ -19,6 +27,13 @@ td, th {
   border: 1px solid #dddddd;
   text-align: center;
   padding: 15px;
+  border-color: white;
+}
+th{
+      background-color:#3C636F;
+      font-style: italic;
+      color:white;
+      width: 30%;
 }
 
 tr:nth-child(even) {
@@ -28,7 +43,7 @@ tr:nth-child(even) {
 </head>
 <body>
 
-<h2 style="text-align: center;">Medicine Control Panel</h2>
+<h2 style="text-align: left; color:#3C636F; font-size: xx-large;font-weight: bold">Medicine Control Panel</h2>
 <br>
     <hr>
     <br>
@@ -36,7 +51,7 @@ tr:nth-child(even) {
   <tr>
     <th>Medicine ID</th>
     <th>Name</th>
-    <th>Arabic name</th>
+
     <th>Action</th>
   </tr>
   <form method="post">
@@ -54,7 +69,7 @@ while ($row=$result -> fetch_assoc()){
     <tr>
     <td><input type="number" name="medicineid" value="<?php echo $row['medicineid']; ?>"></td>
     <td><input type="text" name="medName" value="<?php echo $row['name']; ?>"></td>
-    <td><input type="text" name="medArabName" value="<?php echo $row['arabic_name']; ?>"></td>
+   
     <td><button class="controlBtn" formaction="del_medi.php" >Delete</button></td>
   </tr>
       </form>
