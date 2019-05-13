@@ -3,20 +3,12 @@
 <head>
     <title>pharmacy control panel</title>
 <style>
-     body{
- background: url("4.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  
-  }
     .controlBtn{
-       background-color:#3C636F ;
-        color:white;
+        background-color: aqua;
+        font:white;
         padding:5px;
         margin: 5px;
         width: 70px;
-        font-weight: bold;
     } 
 table {
   font-family: arial, sans-serif;
@@ -26,18 +18,10 @@ table {
 }
 
 td, th {
-border: 1px solid;
+  border: 1px solid #dddddd;
   text-align:center;
-  padding:6px;
-  margin:6px;
-    border-color: white;
-}
-th {
-    background-color:#3C636F;
-      font-style: italic;
-  color:white;
-  width: 30%;
-
+  padding:4px;
+  margin: auto;
 }
 
 tr:nth-child(even) {
@@ -55,7 +39,7 @@ tr:nth-child(even) {
     </script>
 </head>
 <body>
-<h2 style="text-align: left; color:#3C636F ; font-size: xx-large;font-weight: bold">Pharmacies Control Panel</h2>
+<h2 style="text-align: center; color: aqua">Pharmacies Control Panel</h2>
 <br>
     <hr>
     <br>

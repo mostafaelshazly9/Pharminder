@@ -1,0 +1,28 @@
+//if ($conn->connect_errno) {
+//    printf("Connect failed: %s\n", $mysqli->connect_error);
+//    exit();
+//}
+//
+///* check if server is alive */
+//if ($conn->ping()) {
+//    printf ("Our connection is ok!\n");
+//} else {
+//    printf ("Error: %s\n", $mysqli->error);
+//}
+
+    //$id = 100;
+
+//    $sql2 = "Select @id";
+//$result2=  mysqli_query($conn,$sql2)  or die("Last error:{$conn->error}\n");
+    // $data=mysqli_query($conn,$sql);
+  //  if ($result = mysqli_query($conn,$sql)){s
+    //    echo $row['adminid'];
+
+   // }
+
+      
+//     while ($row = $result ->mysqli_fetch_array($result))
+//      {
+//          echo $row[0];
+//      }
+//var_dump($fin);

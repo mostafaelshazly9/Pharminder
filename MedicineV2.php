@@ -51,7 +51,7 @@ tr:nth-child(even) {
   <tr>
     <th>Medicine ID</th>
     <th>Name</th>
-    <th>Arabic name</th>
+
     <th>Action</th>
   </tr>
   <form method="post">
@@ -69,7 +69,7 @@ while ($row=$result -> fetch_assoc()){
     <tr>
     <td><input type="number" name="medicineid" value="<?php echo $row['medicineid']; ?>"></td>
     <td><input type="text" name="medName" value="<?php echo $row['name']; ?>"></td>
-    <td><input type="text" name="medArabName" value="<?php echo $row['arabic_name']; ?>"></td>
+   
     <td><button class="controlBtn" formaction="del_medi.php" >Delete</button></td>
   </tr>
       </form>
