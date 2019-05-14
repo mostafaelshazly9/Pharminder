@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:stretchColumns="0,1,2">
+
+
+    <TextView
+        android:layout_width="41dp"
+        android:layout_height="42dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="SEARCH RESULT"
+        android:textSize="30dp"
+        android:textColor="#000080"
+        android:textStyle="bold" />
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:text="Name"
+            android:textColor="#000080"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="161dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:text="PhoneNumber"
+            android:textColor="#000080"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="109dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:text="Address"
+            android:textColor="#000080"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="pharmy"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="99dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="010000000000"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="60dp"
+            android:layout_height="36dp"
+            android:text="View"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:background="#000080"
+            android:textColor="#ffffff "
+            />
+
+
+
+
+    </TableRow>
+
+
+</TableLayout>
